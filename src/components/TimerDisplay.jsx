@@ -1,7 +1,7 @@
-const TimerDisplay = ({timer}) => {
+const TimerDisplay = ({timer, formatTime}) => {
     return (
         <h2 className="text-4xl font-semibold mt-4">
-        ⌛ Timer: {timer}
+        ⌛ Timer: {formatTime(timer)}
       </h2>
     );
 }
